@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barber Site</title>
+    <link rel="stylesheet" href="./aos-master/dist/aos.css" />
+
+    <link rel="stylesheet" href="splide-4.1.3/dist/css/splide.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body class="bg-gray-300">
     <div class="flex justify-between shadow-2xl items-center bg-black">
@@ -18,22 +22,129 @@
       </div>
 
       <button class="rounded-full font-semibold m-4 p-2 bg-gray-200">
-        Agendar agora
+        Agendar Agora
       </button>
     </div>
     <div>
       <div class="flex justify-center items-center mt-10">
-        <img class="rounded-full shadow-2xl" src="./images/icon.jpg" alt="" />
+        <img
+          data-aos-duration="900"
+          data-aos="fade-right"
+          class="rounded-full shadow-2xl"
+          src="./images/icon.jpg"
+          alt=""
+        />
       </div>
-      <h1 class="mt-8 text-2xl font-semibold text-center">
+      <h1
+        data-aos-duration="900"
+        data-aos="fade-left"
+        class="mt-8 text-2xl font-semibold text-center"
+      >
         Diego Barber: Seu estilo, nossa arte.
       </h1>
-      <p class="text-center font-medium">
+      <p
+        data-aos-duration="900"
+        data-aos="fade-up-left"
+        class="text-center font-medium"
+      >
         Localizado na Avenida São João, número 643.
       </p>
     </div>
     <div class="mt-20">
-      <h1 class="text-center text-3xl font-semibold">Conheça meu trabalho:</h1>
+      <h1
+        data-aos-duration="1200"
+        data-aos="flip-left"
+        class="text-center text-3xl font-semibold"
+      >
+        Conheça meu trabalho:
+      </h1>
     </div>
+    <div class="flex justify-center">
+      <section
+        data-aos-duration="900"
+        data-aos="fade-left"
+        class="splide mt-4 w-4/6"
+        aria-label="Splide Basic HTML Example"
+      >
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide flex justify-center">
+              <img
+                class="p-4 shadow-b"
+                src="./images/10-Moicano-Fade-1.jpg"
+                alt=""
+              />
+            </li>
+            <li class="p-10 splide__slide flex justify-center">
+              <img class="shadow-b" src="./images/nevou.jpg" alt="" />
+            </li>
+            <li class="splide__slide flex justify-center">
+              <img class="p-4 shadow-b" src="./images/pigmentação.jpg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <div>
+      <h1
+        data-aos-duration="900"
+        data-aos="fade-left"
+        class="mt-8 text-2xl font-semibold text-center"
+      >
+        Venha nos conhecer!
+      </h1>
+      <h1
+        data-aos-duration="900"
+        data-aos="fade-right"
+        class="text-2xl font-semibold text-center"
+      >
+        Fique na régua agora.
+      </h1>
+      <div class="flex justify-center mt-4">
+        <button
+          formaction="https;///sffs.com"
+          data-aos-duration="900"
+          data-aos="fade-up-left"
+          type="button"
+          class="bg-black text-white p-2 rounded"
+        >
+          Agendar agora.
+        </button>
+      </div>
+    </div>
+
+    <footer class="bg-gray-300 rounded-lg shadow m-4">
+      <div
+        class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+      >
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2024
+          <a
+            href="https://www.instagram.com/icarodredd/"
+            class="hover:underline"
+            >Dredd</a
+          >. All Rights Reserved.
+        </span>
+        <ul
+          class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500"
+        >
+          <li>
+            <a
+              href="https://www.instagram.com/icarodredd/"
+              class="hover:underline me-4 md:me-6"
+              >About</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./splide-4.1.3/dist/js/splide.min.js"></script>
+    <script src="aos-master/dist/aos.js"></script>
+    <script>
+      new Splide(".splide", { type: "loop" }).mount();
+      AOS.init();
+    </script>
   </body>
 </html>
